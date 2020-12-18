@@ -32,24 +32,24 @@ e[2]-e[CAP] 表示I在集合中是否存在
    把e[n+2]赋值为1
 9. int enlever(ensemble e, int n)
    Role : enleve un entier n a un ensemble e.
-10.int printEns(ensemble e)
+10. int printEns(ensemble e)
    Role : ecrit un ensemble e sur la sortie standard.
-11.int intersection(ensemble e1, ensemble e2, ensemble e3)
+11. int intersection(ensemble e1, ensemble e2, ensemble e3)
    Role : calcule e3 = e1 ∩ e2.
    如果一个数两个集合都存在则添加到新的集合中，并把e3[0]加一 
    e3[i] = (e1[i] & e2[i]);e3[0]+= (e1[i] & e2[I]);
-12.int Union(ensemble e1, ensemble e2, ensemble e3)
+12. int Union(ensemble e1, ensemble e2, ensemble e3)
    Role : calcule e3 = e1 ∪ e2.
    如果e1或者e2中存在某个数，则把它添加到新的集合中，并把e3[0]加一 
    e3[i] = (e1[i] | e2[i]);e3[0]+= (e1[i] | e2[I]);
-13.int difference(ensemble e1, ensemble e2, ensemble e3)
+13. int difference(ensemble e1, ensemble e2, ensemble e3)
    Role : calcule e3 = e1 - e2.
    初始化e4为e1 ∩ e2,把e3赋值为e1
    如果e2中的某个数出现在e4中则将它删去
-14.int complementaire(ensemble e1, ensemble e2)
+14. int complementaire(ensemble e1, ensemble e2)
    Role : calcule e2 complementaire de e1 dans l'ensemble plein.
    把e2填满，如果e1中存在某个数出现，则将它删去
-15.int diffSym(ensemble e1, ensemble e2, ensemble e3)
+15. int diffSym(ensemble e1, ensemble e2, ensemble e3)
    Role : calcule la difference symetrique e3 = e1 ∆ e2.
    初始化e4=e1 ∩ e2,e5=e1 ∪ e2,计算e5=e4-e3
 ### 埃拉托斯特尼筛法
